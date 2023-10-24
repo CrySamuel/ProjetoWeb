@@ -1,6 +1,5 @@
 function registrar(){
 
-    console.log('awd');
     var form = document.getElementById('cadastro')
     var dados = new FormData(form);
 
