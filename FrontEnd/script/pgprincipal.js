@@ -31,7 +31,7 @@ window.onload = async function carrega(){
         var template = 
         ` <div class="card">
         <div class="image-section">
-          <img src="../FrontEnd/Images/${dados[i].id_produtos}.jpg" class="image-sec" />
+          <img src="../upload/${dados[i].id_produtos}.jpg" class="image-sec" />
         </div>
         <div class="text-section">
           <h1>${dados[i].nome}</h1>

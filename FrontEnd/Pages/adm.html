@@ -46,5 +46,35 @@
 
     </header>
     
+    <div class="add-product">
+      <div class="add">
+        <div class="titulo-add">
+          <h1>Adicionar Produtos</h1>
+        </div>
+        <div class="info-add">
+          <input type="text" name="Produto" placeholder="Nome do Produto">
+          <input type="text" name="Preço" placeholder="Preço do Produto">
+          <input type="text" name="Descricao" placeholder="Descrição do Produto">
+          <input type="file" name="File" id="arquivo" placeholder="Adicionar Foto Do Produto">
+          <button onclick="upload()">Upload</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="delete-product">
+      <div class="delete">
+        <div class="titulo-delete">
+          <h1>Deletar Produtos</h1>
+        </div>
+        <div class="info-delete">
+          <input type="text" name="Produto" placeholder="Nome do Produto">
+          <input name="Preço" placeholder="Preço do Produto">
+          <button onclick="deletar()">Deletar</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <script src="../script/adm.js"></script>
 </body>
 </html>
