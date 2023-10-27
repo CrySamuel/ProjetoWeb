@@ -52,11 +52,12 @@
           <h1>Adicionar Produtos</h1>
         </div>
         <div class="info-add">
-          <input type="text" name="Produto" placeholder="Nome do Produto">
-          <input type="text" name="Preço" placeholder="Preço do Produto">
-          <input type="text" name="Descricao" placeholder="Descrição do Produto">
-          <input type="file" name="File" id="arquivo" placeholder="Adicionar Foto Do Produto">
-          <button onclick="upload()">Upload</button>
+          <form id="upload">
+            <input type="text" name="nome" placeholder="Nome do Produto">
+            <input type="text" name="preco" placeholder="Preço do Produto">
+            <input type="text" name="descricao" placeholder="Descrição do Produto">
+            <input type="file" name="arquivo" id="arquivo" placeholder="Adicionar Foto Do Produto"> </form>
+            <button onclick="upload()">Upload</button>
         </div>
       </div>
     </div>

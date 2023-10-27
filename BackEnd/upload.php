@@ -1,12 +1,12 @@
 <?php
 
-    $produto = $_POST['Produto'];
-    $preco = $_POST['Preço'];
-    $descricao = $_POST['Descrição'];
-
+    $nome = $_POST['nome'];
+    $preco = $_POST['preco'];
+    $descricao = $_POST['descricao'];
 
     $con = mysqli_connect('localhost:3306', 'root', '2810leticia', 'lojaweb');
-    $query = "INSERT INTO produtos (nome, preco, descricao) VALUES ('$produto', '$preco', '$descricao')";
+
+    $query = "INSERT INTO produtos (nome, preco, descricao) VALUES ('$nome', '$preco', '$descricao')";
 
     mysqli_query($con, $query);
 
@@ -14,9 +14,10 @@
 
     if ($arquivo["type"] == "image/png")
     {
-        $novo_endereco = "../upload/" . $arquivo["name"];
+        $id = mysqli_insert_id($con);
+        $novo_endereco = "../upload/" . $id.".png";
         move_uploaded_file($arquivo["tmp_name"], $novo_endereco);
-        $mensagem = "Uploadd Realizado com sucesso";
+        $mensagem = "Upload Realizado com sucesso";
     }
     else
     {
