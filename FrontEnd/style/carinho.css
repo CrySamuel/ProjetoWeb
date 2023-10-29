@@ -54,3 +54,23 @@
     outline: 0;
     border: 0;
   }
+
+.carts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cart1{
+  border: solid 1.5px black;
+  padding: 0px 200px 10px 300px;
+}
+.img-cart{
+  width: 150px;
+  height: 100px;
+}
+
+.cart-text{
+  margin-left: 30px;
+}
