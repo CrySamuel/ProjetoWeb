@@ -12,7 +12,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:ital,wght@1,200;1,300;1,500&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="../style/adm.css">
+    <link rel="stylesheet" href="../style/admDelet.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MedievalSharp&family=Merriweather:wght@300&family=Montserrat:ital,wght@1,200;1,300;1,500&display=swap"
       rel="stylesheet">
@@ -45,37 +45,10 @@
         </nav>
 
     </header>
-    
-    <div class="add-product">
-      <div class="add">
-        <div class="titulo-add">
-          <h1>Adicionar Produtos</h1>
-        </div>
-        <div class="info-add">
-          <form id="upload">
-            <input type="text" name="nome" placeholder="Nome do Produto">
-            <input type="text" name="preco" placeholder="Preço do Produto">
-            <input type="text" name="descricao" placeholder="Descrição do Produto">
-            <input type="file" name="arquivo" id="arquivo" placeholder="Adicionar Foto Do Produto"> </form>
-            <button onclick="upload()">Upload</button>
-        </div>
-      </div>
+
+    <div id="produtos" class="cards">
     </div>
 
-    <div class="delete-product">
-      <div class="delete">
-        <div class="titulo-delete">
-          <h1>Deletar Produtos</h1>
-        </div>
-        <div class="info-delete">
-          <input type="text" name="Produto" placeholder="Nome do Produto">
-          <input name="Preço" placeholder="Preço do Produto">
-          <button onclick="deletar()">Deletar</button>
-        </div>
-      </div>
-      </div>
-    </div>
-
-    <script src="../script/adm.js"></script>
+    <script src="../script/admDelet.js"></script>
 </body>
 </html>

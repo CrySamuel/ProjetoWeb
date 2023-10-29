@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+  
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+  
+a:hover {
+  opacity: 0.7;
+}
+  
+.logo {
+  font-size: clamp(1.0em, 1.6em, 2.0em);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+} 
+  
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background:#03A688;
+    height: 8vh;
+}
+  
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+  
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    padding: 15px;
+}
+  
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: 'MedievalSharp', cursive;
+}
+    
+#search-box {
+    background: #fff;
+    padding:  10px;
+    border-radius: 6px;
+    outline: 0;
+    border: 0;
+}
+  
+#titulo{
+    margin: 20px;
+}
+  
+body{
+  height: 100vh;
+  font-family: 'Roboto Slab', serif;
+}
+
+.cards{
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.card{
+  background-color: white;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: solid 1px black;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  gap: 20px;
+}
+
+.image-section{
+width: 100%;
+}
+.image-sec{
+ width: 100%;
+ height: 150px;
+ border-top-right-radius: 20px;
+ border-top-left-radius: 20px;
+
+}
+.text-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 20px;
+}
+.text-section p{
+  margin-top: 5px;
+  text-align: center;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+.price p{
+  font-size: 20px;
+  color: rgb(7, 106, 7);
+}
+.but{
+  border: none;
+  outline: none;
+  background-color: rgba(8, 75, 8, 0.491);
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.but:hover{
+  transition: .5s linear;
+  transform: scale(1.1);
+}
+
+  
