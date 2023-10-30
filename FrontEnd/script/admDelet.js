@@ -15,15 +15,13 @@ window.onload = async function carrega(){
           <img src="../../upload/${dados[i].id_produtos}.png" class="image-sec" />
         </div>
         <div class="text-section">
-            <h1>${dados[i].nome}</h1>
-            <p>${dados[i].descricao}</p>
-          <div class="price" style="margin-top: 20px;">
-            <p>${dados[i].preco}</p>
-          </div>
-            <div class="button-price">
-              <button onclick="deletar(${dados[i].id_produtos})" class="but">Deletar Produto</button>
-            </div>
+          <h1>${dados[i].nome}</h1>
+          <p>${dados[i].descricao}</p>
         </div>
+            <div class="but">
+              <p>${dados[i].preco}</p>
+              <button onclick="deletar(${dados[i].id_produtos})">Excluir</button>
+            </div>
       </div>
       `;
 

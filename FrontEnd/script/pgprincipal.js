@@ -1,8 +1,17 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   var radio = document.querySelector('.nav-auto');
   var cont = 1;
-  document.getElementById('radio1').checked = true;
+
+  // Função para verificar se o elemento existe e defini-lo como "checked"
+  function checkRadio(id) {
+    var radioElement = document.getElementById(id);
+    if (radioElement) {
+      radioElement.checked = true;
+    }
+  }
+
+  // Verifica e define o primeiro elemento como "checked" ao carregar
+  checkRadio('radio1');
 
   setInterval(function() {
     proximaImg();
@@ -15,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
       cont = 1;
     }
 
-    document.getElementById('radio' + cont).checked = true;
+    // Atualiza o elemento "checked" com base no valor de 'cont'
+    checkRadio('radio' + cont);
   }
 });
 
@@ -44,7 +54,11 @@ window.onload = async function carrega(){
             </div>
       </div>`;
 
-      document.getElementById('produtos').innerHTML += template;
+      var produtosElement = document.getElementById('produtos');
+        if (produtosElement) {
+          produtosElement.innerHTML += template;
+        }
+
     }
 }
 
@@ -53,7 +67,7 @@ function adicionar(id){
   var dados = new FormData();
   dados.append("id", id)
 
-  fetch ("../../BackEnd/carrinhoAdd.php", {
+  fetch ("../BackEnd/carrinhoAdd.php", {
     method: "POST",
     body: dados
   });
