@@ -70,3 +70,8 @@ img {
     font-weight: bold;
     border-color: #c2baba;
 }
+
+a {
+    color: #fff;
+    text-decoration: none;
+}

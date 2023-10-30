@@ -18,7 +18,7 @@ window.onload = async function(){
         </div>
             <div class="but">
               <p>${dados[i].preco}</p>
-              <button onclick="adicionar(${dados[i].id_produtos})">Compre aqui</button>
+              <button onclick="excluir(${dados[i].id_produtos})">Excluir</button>
             </div>
       </div>
         `;
@@ -27,3 +27,13 @@ window.onload = async function(){
     }
 }
 
+function excluir(id){
+
+  var dados = new FormData();
+  dados.append("id", id)
+
+  fetch ("../../BackEnd/admDelet.php", {
+    method: "POST",
+    body: dados
+  });
+}
