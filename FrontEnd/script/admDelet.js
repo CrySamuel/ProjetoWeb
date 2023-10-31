@@ -29,13 +29,18 @@ window.onload = async function carrega(){
     }
 }
 
-function deletar(id){
-
+function deletar(id) {
   var dados = new FormData();
-  dados.append("id", id)
+  dados.append("id", id);
 
-  fetch ("../../BackEnd/admDelet.php", {
+  fetch("../../BackEnd/admDelet.php", {
     method: "POST",
     body: dados
+  }).then(function(response) {
+    if (response.ok) {
+      window.location.reload(true);
+    } else {
+      console.error("Erro ao deletar o item");
+    }
   });
 }

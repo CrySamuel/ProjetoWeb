@@ -17,7 +17,7 @@ window.onload = async function(){
           <p>${dados[i].descricao}</p>
         </div>
             <div class="but">
-              <p>${dados[i].preco}</p>
+              <p>R$ ${dados[i].preco}</p>
               <button onclick="excluir(${dados[i].id_produtos})">Excluir</button>
             </div>
       </div>
@@ -32,8 +32,14 @@ function excluir(id){
   var dados = new FormData();
   dados.append("id", id)
 
-  fetch ("../../BackEnd/admDelet.php", {
+  fetch ("../../BackEnd/carrinhoDelet.php", {
     method: "POST",
     body: dados
+  }).then(function(response) {
+    if (response.ok) {
+      window.location.reload(true);
+    } else {
+      console.error("Erro ao excluir o item");
+    }
   });
 }

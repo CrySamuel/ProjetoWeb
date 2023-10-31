@@ -49,7 +49,7 @@ window.onload = async function carrega(){
           <p>${dados[i].descricao}</p>
         </div>
             <div class="but">
-              <p>${dados[i].preco}</p>
+              <p>R$ ${dados[i].preco}</p>
               <button onclick="adicionar(${dados[i].id_produtos})">Compre aqui</button>
             </div>
       </div>`;

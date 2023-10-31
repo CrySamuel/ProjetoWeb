@@ -54,3 +54,69 @@
     outline: 0;
     border: 0;
   }
+/* Estilos para a seção do carrinho */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.image-section {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.image-sec {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-section {
+  flex: 1;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333; /* Cor do título */
+}
+
+p {
+  font-size: 1em;
+  color: #333; /* Cor do texto */
+  line-height: 1.4;
+}
+
+.but {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #ff6666;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #ff3333;
+}
