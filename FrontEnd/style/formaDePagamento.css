@@ -53,4 +53,38 @@
     border-radius: 6px;
     outline: 0;
     border: 0;
-  } 
+  }
+
+.geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.payment-options {
+    margin-top: 30px;
+}
+
+.payment-options a {
+    display: block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #03A688;
+    color: #fff;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.payment-options a:hover {
+    background-color: #027368;
+}

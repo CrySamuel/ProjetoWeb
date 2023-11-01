@@ -27,6 +27,7 @@ nav {
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   background:#03A688;
   height: 8vh;
+  width: 100%;
 }
 
 .nav-list {
@@ -64,6 +65,7 @@ section.slider{
   height: 50%;
   padding: 0 !important;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 
