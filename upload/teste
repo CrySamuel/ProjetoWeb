@@ -1,0 +1,14 @@
+  <button onclick="mostrarTodosProdutos()">Mostrar Todos os Produtos</button>
+  function mostrarTodosProdutos() {
+    var alertContent = "Lista de Produtos:\n";
+  
+    for (var i = 0; i < dados.length; i++) {
+      alertContent += `
+        Nome: ${dados[i].nome}\n
+        Descrição: ${dados[i].descricao}\n
+        Preço: R$ ${dados[i].preco}\n\n
+      `;
+    }
+  
+    alert(alertContent);
+  }

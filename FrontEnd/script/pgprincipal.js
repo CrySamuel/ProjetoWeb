@@ -1,4 +1,4 @@
-var dados; // Declare a variável dados aqui.
+var dados; 
 
 document.addEventListener("DOMContentLoaded", function() {
   var radio = document.querySelector('.nav-auto');
@@ -37,19 +37,15 @@ window.onload = async function carrega() {
 
   for (var i = 0; i < dados.length; i++) {
     var template =
-      ` <div class="card">
-        <div class="image-section">
-          <img src="../upload/${dados[i].id_produtos}.png" class="image-sec" />
-        </div>
-        <div class="text-section">
-          <h1>${dados[i].nome}</h1>
-          <p>${dados[i].descricao}</p>
-        </div>
-        <div class="but">
-          <p>R$ ${dados[i].preco}</p>
-          <button onclick="adicionar(${dados[i].id_produtos})">Compre aqui</button>
-        </div>
-      </div>`;
+    `<div class="card">
+      <div class="price">
+        <p>R$ ${dados[i].preco}</p>
+      </div>
+    <div class="image-section">
+      <img src="../upload/${dados[i].id_produtos}.png" class="image-sec" />
+    </div>
+  </div>
+     `;
 
     var produtosElement = document.getElementById('produtos');
     if (produtosElement) {
@@ -104,3 +100,4 @@ function adicionar(id) {
     body: data
   });
 }
+
